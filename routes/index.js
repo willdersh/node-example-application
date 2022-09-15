@@ -17,7 +17,7 @@ app.use(
 const workos = new WorkOS(process.env.WORKOS_API_KEY)
 const clientID = process.env.WORKOS_CLIENT_ID
 const connection = 'conn_01GCWXM65JQR4WQ9RKRVQT2RHM'
-const redirectURI = 'http://localhost:8000/callback'
+const redirectURI = 'https://will-dersh.herokuapp.com/callback'
 const state = 'thisguysemail@gmail.com'
 
 router.get('/', function (req, res) {
