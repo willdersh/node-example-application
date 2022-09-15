@@ -5,8 +5,6 @@ import morgan from 'morgan'
 
 const app = express()
 
-const port = process.env.PORT || 8000
-
 app.use('/public', express.static('public'))
 
 app.use(express.urlencoded({ extended: false }))
@@ -17,6 +15,6 @@ app.use(morgan('dev'))
 
 app.use('/', router)
 
-app.listen(port, () => {
-    console.log(`⚡️ [server]: Server is running at https://localhost:${port}`)
-})
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+});
