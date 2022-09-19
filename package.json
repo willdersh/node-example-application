@@ -6,8 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js",
-    "start:dev": "node ./index.js"
+    "start": "node ./index.js"
   },
   "author": "WorkOS",
   "dependencies": {
@@ -23,5 +22,8 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.19"
+  },
+  "engines": {
+    "node": "16.17.0"
   }
 }
