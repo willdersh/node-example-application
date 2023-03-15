@@ -16,9 +16,9 @@ app.use(
 
 const workos = new WorkOS(process.env.WORKOS_API_KEY)
 const clientID = process.env.WORKOS_CLIENT_ID
-const connection = 'conn_01GVGH1JY59Q9JW1FHQGA4YY9N'
+const connection = ''
 const redirectURI = 'https://test-application-fyq1w.kinsta.app'
-const state = 'thisguysemail@gmail.com'
+const state = ''
 
 router.get('/', function (req, res) {
     if (session.isloggedin) {
